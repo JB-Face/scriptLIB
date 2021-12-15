@@ -1,2 +1,15 @@
-# scriptLIB
-用来保存我平时写的脚本和工具，尽可能复用（以及自己抄自己）
+<pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">🙂 <a href="https://koaning.io">Vincent D. Warmerdam</a>                                                                             
+<span style="color: #808080; text-decoration-color: #808080">┣━━ </span>📦 Open Source Packages                                                                         
+<span style="color: #808080; text-decoration-color: #808080">┃   ┣━━ </span><span style="font-weight: bold"><a href="https://scikit-lego.netlify.app/">scikit-lego</a></span> - <span style="color: #808080; text-decoration-color: #808080">lego bricks for sklearn</span>                                                       
+<span style="color: #808080; text-decoration-color: #808080">┃   ┗━━ </span><span style="font-weight: bold"><a href="https://koaning.github.io/human-learn/">human-learn</a></span> - <span style="color: #808080; text-decoration-color: #808080">rule-based components for sklearn</span>                                             
+<span style="color: #808080; text-decoration-color: #808080">┣━━ </span>⭐ Online Projects                                                                              
+<span style="color: #808080; text-decoration-color: #808080">┃   ┣━━ </span><span style="font-weight: bold"><a href="https://koaning.io">koaning.io</a></span>   - <span style="color: #808080; text-decoration-color: #808080">personal blog</span>                                                                
+<span style="color: #808080; text-decoration-color: #808080">┃   ┗━━ </span><span style="font-weight: bold"><a href="https://calmcode.io">calmcode.io</a></span>  - <span style="color: #808080; text-decoration-color: #808080">dev education service</span>                                                        
+<span style="color: #808080; text-decoration-color: #808080">┣━━ </span>🎙️ Popular Talks                                                                                 
+<span style="color: #808080; text-decoration-color: #808080">┃   ┣━━ </span><span style="font-weight: bold"><a href="https://youtu.be/qcrR-Hd0LhI?t=542">Optimal Benchmarks and Other Failures</a></span>                                                       
+<span style="color: #808080; text-decoration-color: #808080">┃   ┗━━ </span><span style="font-weight: bold"><a href="https://www.youtube.com/watch?v=nJAmN6gWdK8">Playing by the Rules-Based-Systems</a></span>                                                          
+<span style="color: #808080; text-decoration-color: #808080">┗━━ </span>👨‍💻 Employer                                                                                   
+<span style="color: #808080; text-decoration-color: #808080">    ┗━━ </span><span style="font-weight: bold"><a href="https://rasa.com">Rasa</a></span> - <span style="color: #808080; text-decoration-color: #808080">conversational software</span>                                                              
+
+<span style="color: #008000; text-decoration-color: #008000">Follow me on twitter </span><span style="color: #008000; text-decoration-color: #008000; font-weight: bold"><a href="https://twitter.com/fishnets88">@fishnets88</a></span>
+</pre>
