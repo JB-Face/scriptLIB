@@ -67,8 +67,9 @@ def iris(path):
             di['wokoff'] = table.cell(i[0]+a,i[1]+2).value
             di['sometime'] = '19:00'
             wo = datetime.strptime(table.cell(i[0]+a,i[1]+1).value, '%H:%M')
-            wf = datetime.strptime(table.cell(i[0]+a,i[1]+2).value, '%H:%M')
+            wf = datetime.strptime('19:00', '%H:%M')
             worktime = wf - wo
+
             realworktime = int(str(worktime).split(':')[0])
             fullday = 0
             if realworktime >= 8:
@@ -79,29 +80,32 @@ def iris(path):
             di['overtime'] = overtime
 
             # 比值计算
-            otime = int(overtime.split(':')[0]) + int(overtime.split(':')[1])/60
+            otime = int(overtime.split(':')[0]) + int(overtime.split(':')[1])/60.0
             rtimr = realworktime
-
+            
             if fullday:
-                di['day&person'] =round(1+1.5*(float(otime)/8.0),1)
+                di['day&person'] =round(1+1.5*(float(otime)/8.0),3)
+                di['otpersonday'] = round(1.5*(float(otime)/8.0),3)
             else:
                 di['day&person'] = round(rtimr/8.0,1)
+                di['otpersonday'] = 0
             di['reverso'] = 900
             a = a+1
 
-    title = [["姓名","外派日期","是否周末","上班时间","下班时间"," ","上班时长","加班时间","人天","单价"]]
+    title = [["姓名","外派日期","是否周末","上班时间","下班时间"," ","上班时长","加班时间","加班人天","人天","单价"]]
+    
 
 
     for i in lib:
-        # p = path.split('\\')[-1]
-        # p = path.split(p)[0] + str(i)+'.xls'
-        p = ".\\"+str(i)+'.xls'
+        p = path.split('/')[-1]
+        p = path.split(p)[0] + str(i)+'.xls'
+        print(p)
         write_excel_xls(p,'main',title)
         t = lib[i]['day']
         she = []
         for k in t:
             kk = t[k]
-            newar = [str(i),str(k),kk['week'],kk['workon'],kk['wokoff'],kk['sometime'],kk['worktime'],kk['overtime'],kk['day&person'],kk['reverso']]
+            newar = [str(i),str(k),kk['week'],kk['workon'],kk['wokoff'],kk['sometime'],kk['worktime'],kk['overtime'],kk['otpersonday'],kk['day&person'],kk['reverso']]
             she.append(newar)
         write_excel_xls_append(p,she)
 
